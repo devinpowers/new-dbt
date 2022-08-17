@@ -7,7 +7,7 @@ with customers as (
 
 ),
 
-with orders as (
+orders as (
 
     select * from {{ ref('stg_orders') }}
 
@@ -44,4 +44,4 @@ final as (
 
 )
 
-select * from final;
+select * from final
